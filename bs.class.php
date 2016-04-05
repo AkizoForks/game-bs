@@ -38,7 +38,7 @@ if(!class_exists('bs')) {
 			array(
 				'name'		=> 'faction',
 				'type'		=> 'factions',
-				'admin' 	=> false,
+				'admin' 	=> true,
 				'decorate'	=> false,
 				'parent'	=> false,
 			),
@@ -132,7 +132,7 @@ if(!class_exists('bs')) {
 					'type'		=> 'text',
 					'category'	=> 'character',
 					'lang'		=> 'uc_guild',
-					'size'		=> 32,
+					'size'		=> 20,
 					'undeletable'	=> true,
 				)
 			);
