@@ -45,6 +45,7 @@ $german_array = array (
     		6 => 'Nachtklinge',
     		7 => 'Klingentänzer',
     		8 => 'Paktierer',
+		9 => 'Elementarkämpfer',
   	),
 	'genders' => array(
 		0 => 'Männlich',

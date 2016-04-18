@@ -76,21 +76,14 @@ if(!class_exists('bs')) {
 				'parent'	=> array(
 					'race' => array(
 						0 	=> 'all',		// Unknown
-						1 	=> array(0,2,4,5),	// Gon
+						1 	=> array(0,2,4,5,9),	// Gon
 						2 	=> array(0,3,4,7,8),	// Lyn
-						3 	=> array(0,1,4,5),	// Yun
+						3 	=> array(0,1,4,5,9),	// Yun
 						4 	=> array(0,1,5,6,8),	// Jin
 					),
 				),
 			),
 		);
-		
-		/*public $default_roles = array(
-			1 => array(2, 5, 6, 8, 11),
-			2 => array(1, 2, 5, 10, 11),
-			3 => array(2, 3, 4, 6, 8, 9),
-			4 => array(1, 2, 5, 7, 8, 10, 11)
-		);*/
 		
 		protected $glang	= array();
 		protected $lang_file	= array();
@@ -105,6 +98,7 @@ if(!class_exists('bs')) {
 			6	=> '#D345FF',
 			7	=> '#F6DC78',
 			8	=> '#A45934',
+			9	=> '#FF3021',
 		);
 		public function install($install=false){}
 		public function profilefields(){
