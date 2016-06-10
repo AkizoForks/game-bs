@@ -138,4 +138,3 @@ if(!class_exists('bs')) {
 	}
 }
 ?>
-
