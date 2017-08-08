@@ -79,7 +79,7 @@ if(!class_exists('bs')) {
 						1 	=> array(0,2,4,5,9),	// Gon
 						2 	=> array(0,3,4,7,8),	// Lyn
 						3 	=> array(0,1,4,5,9),	// Yun
-						4 	=> array(0,1,5,6,8),	// Jin
+						4 	=> array(0,1,5,6,8,9),	// Jin
 					),
 				),
 			),
