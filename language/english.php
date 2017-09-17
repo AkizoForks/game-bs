@@ -46,7 +46,7 @@ $english_array = array (
     		7 => 'Blade Dancer',
     		8 => 'Warlock',
 		9 => 'Chi Master',
-		10 => 'Gunner',
+		10 => 'Gunslinger',
   	),
 	'genders' => array(
 		0 => 'Male',
