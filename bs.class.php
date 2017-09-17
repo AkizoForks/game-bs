@@ -78,8 +78,8 @@ if(!class_exists('bs')) {
 						0 	=> 'all',		// Unknown
 						1 	=> array(0,2,4,5,9),	// Gon
 						2 	=> array(0,3,4,7,8),	// Lyn
-						3 	=> array(0,1,4,5,9),	// Yun
-						4 	=> array(0,1,5,6,8,9),	// Jin
+						3 	=> array(0,1,4,5,9,10),	// Yun
+						4 	=> array(0,1,5,6,8,9,10),	// Jin
 					),
 				),
 			),
@@ -99,6 +99,7 @@ if(!class_exists('bs')) {
 			7	=> '#F6DC78',
 			8	=> '#A45934',
 			9	=> '#FF3021',
+			10	=> '#FF93AC',
 		);
 		public function install($install=false){}
 		public function profilefields(){
