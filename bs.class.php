@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('bs')) {
 	class bs extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version			= '1.1.5';
+		public $version			= '1.1.6';
 		protected $this_game		= 'bs';
 		protected $types		= array('factions', 'races', 'classes', 'genders');
 		protected $genders		= array();
@@ -77,7 +77,7 @@ if(!class_exists('bs')) {
 					'race' => array(
 						0 	=> 'all',		// Unknown
 						1 	=> array(0,2,4,5,9),	// Gon
-						2 	=> array(0,3,4,7,8),	// Lyn
+						2 	=> array(0,3,4,7,8,10),	// Lyn
 						3 	=> array(0,1,4,5,9,10),	// Yun
 						4 	=> array(0,1,5,6,8,9,10),	// Jin
 					),
@@ -109,7 +109,7 @@ if(!class_exists('bs')) {
 					'type'			=> 'spinner',
 					'category'		=> 'character',
 					'lang'			=> 'uc_level',
-					'max'			=> 50,
+					'max'			=> 55,
 					'min'			=> 1,
 					'undeletable'		=> true,
 					'sort'			=> 4
@@ -118,7 +118,7 @@ if(!class_exists('bs')) {
 					'type'		=> 'spinner',
 					'category'	=> 'character',
 					'lang'		=> 'uc_hongmoon',
-					'max'		=> 15,
+					'max'		=> 25,
 					'min'		=> 0,
 					'undeletable'	=> true,
 					'sort'		=> 5
