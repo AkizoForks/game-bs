@@ -100,7 +100,7 @@ if(!class_exists('bs')) {
             8 => '#A45934',
             9 => '#FF3021',
             10 => '#FF93AC',
-            11 => '#FF0000',
+            11 => '#CCFFFF',
         );
         public function install($install=false){}
         public function profilefields(){
