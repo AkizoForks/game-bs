@@ -48,6 +48,7 @@ $english_array = array (
         9 => 'Chi Master',
         10 => 'Gunslinger',
         11 => 'Warden',
+        12 => 'Zen Archer',
     ),
     'genders' => array(
         0 => 'Male',

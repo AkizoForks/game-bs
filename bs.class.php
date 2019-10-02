@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('bs')) {
     class bs extends game_generic {
         protected static $apiLevel = 20;
-        public $version = '1.2.0';
+        public $version = '1.3.0';
         protected $this_game = 'bs';
         protected $types = array('factions', 'races', 'classes', 'genders');
         protected $genders = array();
@@ -78,8 +78,8 @@ if(!class_exists('bs')) {
                         0 => 'all',                // Unknown
                         1 => array(0,2,4,5,9,11),  // Gon
                         2 => array(0,3,4,7,8,10),  // Lyn
-                        3 => array(0,1,4,5,9,10),  // Yun
-                        4 => array(0,1,5,6,8,9,10,11),  // Jin
+                        3 => array(0,1,4,5,9,10,12),  // Yun
+                        4 => array(0,1,5,6,8,9,10,11,12),  // Jin
                     ),
                 ),
             ),
@@ -101,6 +101,7 @@ if(!class_exists('bs')) {
             9 => '#FF3021',
             10 => '#FF93AC',
             11 => '#CCFFFF',
+            12 => '#B6985C'
         );
         public function install($install=false){}
         public function profilefields(){
