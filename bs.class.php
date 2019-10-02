@@ -110,7 +110,7 @@ if(!class_exists('bs')) {
                     'type' => 'spinner',
                     'category' => 'character',
                     'lang' => 'uc_level',
-                    'max' => 55,
+                    'max' => 60,
                     'min' => 1,
                     'undeletable' => true,
                     'sort' => 4
@@ -119,7 +119,7 @@ if(!class_exists('bs')) {
                     'type' => 'spinner',
                     'category' => 'character',
                     'lang' => 'uc_hongmoon',
-                    'max' => 25,
+                    'max' => 30,
                     'min' => 0,
                     'undeletable' => true,
                     'sort' => 5
