@@ -28,6 +28,10 @@ $english_array = array (
         'cerulean_order' => 'The Cerulean Order',
         'crimson_legion' => 'The Crimson Legion',
     ),
+    'regions' => array(
+        'eu' => 'Europe',
+        'na' => 'North America',
+    ),
     'races' => array(
         0 => 'Unknown',
         1 => 'Gon',
@@ -64,6 +68,14 @@ $english_array = array (
         'uc_class' => 'Class',
         'uc_level'=> 'Level',
         'uc_hongmoon' => 'Hongmoon Level',
+        'uc_region' => 'Region',
+
+        'raid_bt' => 'Skybreak Spire',
+        'raid_vt' => 'Temple of Eluvium',
+        'raid_sk' => 'Scion\'s Keep',
+        'raid_tt' => 'Nightfall Sanctuary',
+        'raid_et' => 'Scarlet Conservatory',
+        'raid_ia' => 'Steelbreaker',
     ),
 );
 

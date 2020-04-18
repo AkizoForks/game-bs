@@ -19,16 +19,17 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-if ( !defined('EQDKP_INC') ){
-    header('HTTP/1.0 404 Not Found');exit;
+if (!defined('EQDKP_INC')) {
+    header('HTTP/1.0 404 Not Found');
+    exit;
 }
 
-if(!class_exists('bs')) {
+if (!class_exists('bs')) {
     class bs extends game_generic {
         protected static $apiLevel = 20;
-        public $version = '1.3.0';
+        public $version = '1.4.0';
         protected $this_game = 'bs';
-        protected $types = array('factions', 'races', 'classes', 'genders');
+        protected $types = array('factions', 'races', 'classes', 'genders', 'regions');
         protected $genders = array();
         protected $classes = array();
         protected $races = array();
@@ -38,6 +39,13 @@ if(!class_exists('bs')) {
             array(
                 'name' => 'faction',
                 'type' => 'factions',
+                'admin' => true,
+                'decorate' => false,
+                'parent' => false,
+            ),
+            array(
+                'name' => 'region',
+                'type' => 'regions',
                 'admin' => true,
                 'decorate' => false,
                 'parent' => false,
@@ -56,11 +64,11 @@ if(!class_exists('bs')) {
                 'decorate' => false,
                 'parent' => array(
                     'race' => array(
-                        0 => array(0,1),  // Unknown
-                        1 => array(0,1),  // Gon
-                        2 => array(0,1),  // Lyn
+                        0 => array(0, 1),  // Unknown
+                        1 => array(0, 1),  // Gon
+                        2 => array(0, 1),  // Lyn
                         3 => array(1),    // Yun
-                        4 => array(0,1),  // Jin
+                        4 => array(0, 1),  // Jin
                     ),
                 ),
             ),
@@ -76,10 +84,10 @@ if(!class_exists('bs')) {
                 'parent' => array(
                     'race' => array(
                         0 => 'all',                // Unknown
-                        1 => array(0,2,4,5,9,11),  // Gon
-                        2 => array(0,3,4,7,8,10),  // Lyn
-                        3 => array(0,1,4,5,9,10,12),  // Yun
-                        4 => array(0,1,5,6,8,9,10,11,12),  // Jin
+                        1 => array(0, 2, 4, 5, 9, 11),  // Gon
+                        2 => array(0, 3, 4, 6, 7, 8, 10),  // Lyn
+                        3 => array(0, 1, 4, 5, 9, 10, 12),  // Yun
+                        4 => array(0, 1, 5, 6, 8, 9, 10, 11, 12),  // Jin
                     ),
                 ),
             ),
@@ -103,8 +111,40 @@ if(!class_exists('bs')) {
             11 => '#CCFFFF',
             12 => '#B6985C'
         );
-        public function install($install=false){}
-        public function profilefields(){
+
+        public function install($install = false) {
+            $btID = $this->game->addEvent($this->glang('raid_bt'), 0, 'raid.png');
+            $vtID = $this->game->addEvent($this->glang('raid_vt'), 0, 'raid.png');
+            $skID = $this->game->addEvent($this->glang('raid_sk'), 0, 'raid.png');
+            $ttID = $this->game->addEvent($this->glang('raid_tt'), 0, 'raid.png');
+            $etID = $this->game->addEvent($this->glang('raid_et'), 0, 'raid.png');
+            $iaID = $this->game->addEvent($this->glang('raid_ia'), 0, 'raid.png');
+
+            $this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', array());
+
+            $intItempoolBT = $this->game->addItempool($this->glang('raid_bt'), $this->glang('raid_bt') . " Itempool");
+            $this->game->addMultiDKPPool($this->glang('raid_bt'), $this->glang('raid_bt') . " DKP", array($btID), array($intItempoolBT));
+
+            $intItempoolVT = $this->game->addItempool($this->glang('raid_vt')."/" . $this->glang('raid_sk'), $this->glang('raid_vt') . "/" . $this->glang('raid_sk') . " Itempool");
+            $this->game->addMultiDKPPool($this->glang('raid_vt')."/" . $this->glang('raid_sk'), $this->glang('raid_vt') . "/" . $this->glang('raid_sk') . " DKP", array($vtID, $skID), array($intItempoolVT));
+
+            $intItempoolTT = $this->game->addItempool($this->glang('raid_tt'), $this->glang('raid_tt') . " Itempool");
+            $this->game->addMultiDKPPool($this->glang('raid_tt'), $this->glang('raid_tt') . " DKP", array($ttID), array($intItempoolTT));
+
+            $intItempoolET = $this->game->addItempool($this->glang('raid_et'), $this->glang('raid_et') . " Itempool");
+            $this->game->addMultiDKPPool($this->glang('raid_et'), $this->glang('raid_et') . " DKP", array($etID), array($intItempoolET));
+
+            $intItempoolIA = $this->game->addItempool($this->glang('raid_ia'), $this->glang('raid_ia') . " Itempool");
+            $this->game->addMultiDKPPool($this->glang('raid_ia'), $this->glang('raid_ia') . " DKP", array($iaID), array($intItempoolIA));
+
+            $this->game->addRank(0, 'Recruit', true);
+            $this->game->addRank(1, 'Member');
+            $this->game->addRank(2, 'Veteran');
+            $this->game->addRank(3, 'Advisor');
+            $this->game->addRank(4, 'Leader');
+        }
+
+        public function profilefields() {
             // Category 'character' is a fixed one! All others are created dynamically!
             $xml_fields = array(
                 'level' => array(
@@ -120,7 +160,7 @@ if(!class_exists('bs')) {
                     'type' => 'spinner',
                     'category' => 'character',
                     'lang' => 'uc_hongmoon',
-                    'max' => 30,
+                    'max' => 35,
                     'min' => 0,
                     'undeletable' => true,
                     'sort' => 5
@@ -135,7 +175,8 @@ if(!class_exists('bs')) {
             );
             return $xml_fields;
         }
-        protected function load_filters($langs){
+
+        protected function load_filters($langs) {
             return array();
         }
     }

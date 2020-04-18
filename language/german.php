@@ -19,14 +19,19 @@
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-if ( !defined('EQDKP_INC') ){
-    header('HTTP/1.0 404 Not Found');exit;
+if (!defined('EQDKP_INC')) {
+    header('HTTP/1.0 404 Not Found');
+    exit;
 }
 
-$german_array = array (
+$german_array = array(
     'factions' => array(
         'cerulean_order' => 'Der Coelinorden',
         'crimson_legion' => 'Die Karminlegion',
+    ),
+    'regions' => array(
+        'eu' => 'Europa',
+        'na' => 'Nordamerika',
     ),
     'races' => array(
         0 => 'Unbekannt',
@@ -64,6 +69,14 @@ $german_array = array (
         'uc_class' => 'Klasse',
         'uc_level' => 'Level',
         'uc_hongmoon' => 'Hongmoon Level',
+        'uc_region' => 'Region',
+
+        'raid_bt' => 'Himmelsspitze',
+        'raid_vt' => 'Tempel der Winde',
+        'raid_sk' => 'Festung des Usurpators',
+        'raid_tt' => 'Mausoleum der Dämmerung',
+        'raid_et' => 'Scharlachrote Pagode',
+        'raid_ia' => 'Stählerne Arche',
     ),
 );
 
