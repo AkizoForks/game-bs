@@ -54,6 +54,7 @@ $german_array = array(
         10 => 'Schütze',
         11 => 'Beschützer',
         12 => 'Bogenläufer',
+        13 => 'Astromant',
     ),
     'genders' => array(
         0 => 'Männlich',
