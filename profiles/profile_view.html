@@ -1,0 +1,428 @@
+<div id="bns_character">
+    <!-- IF BNS_ONLINE == 1 -->
+    <div id="content_box">
+        <!-- IF CHAR_AVATAR != '' -->
+        <img id="avatar" src="{CHAR_AVATAR}" alt="{CHARDATA_NAME}" />
+        <!-- ENDIF -->
+        <div>
+            <div id="main_data">
+                {IMG_CLASSICON}
+                <div>
+                    <h1 class="name">{CHARDATA_NAME}</h1>
+                    <div class="level">{L_level} {CHAR_LEVEL}<!-- IF CHAR_HM_LEVEL > 0 --> HM {CHAR_HM_LEVEL}<!-- ENDIF --></div>
+                    <div class="faction">{CHAR_SERVER}<!-- IF CHAR_FACTION != '' --> , <span class="faction_{CHAR_FACTION_COLOR}">{CHAR_FACTION}</span><!-- ENDIF --></div>
+                    <div class="clan">{CHAR_CLAN}</div>
+                </div>
+            </div>
+
+            <div id="bns_tabs">
+                <ul>
+                    <li><a href="#bns_tabs-eq"><span>{GL_equipment}</span></a></li>
+                    <li><a href="#bns_tabs-stats"><span>{GL_stats}</span></a></li>
+                    <!-- IF HAS_TALENTS -->
+                    <li><a href="#bns_tabs-talents"><span><img class="spec_icon" src="{CURRENT_SPEC:image}" /> {CURRENT_SPEC:name} - {GL_talents}</span></a></li>
+                    <!-- ENDIF -->
+                    <li><a href="#bns_tabs-skills"><span><img class="spec_icon" src="{CURRENT_SPEC:image}" /> {CURRENT_SPEC:name} - {GL_skills}</span></a></li>
+                </ul>
+                <div id="bns_tabs-eq" style="height: min-content; overflow: auto;">
+                    <div class="item weapon grade{WEAPON:grade}">
+                        <div class="icon" style="background-image: url({WEAPON:image});" alt="{WEAPON:name}"></div>
+                        <div class="data">
+                            <div>{WEAPON:name}</div>
+                            {WEAPON:psycheData}
+                            <!-- BEGIN WEAPON_GEMS -->
+                            <img class="gem" src="{WEAPON_GEMS.image}" alt="{WEAPON_GEMS.name}" title="{WEAPON_GEMS.name}" />
+                            <!-- END WEAPON_GEMS -->
+                        </div>
+                    </div>
+
+                    <div class="item-box">
+                        <div class="box">
+                            <div class="item ring grade{RING:grade}">
+                                <div class="icon" style="background-image: url({RING:image});" alt="{RING:name}"></div>
+                                <div class="data">
+                                    <div>{RING:name}</div>
+                                    {RING:psycheData}
+                                </div>
+                            </div>
+                            <div class="item earring grade{EARRING:grade}">
+                                <div class="icon" style="background-image: url({EARRING:image});" alt="{EARRING:name}"></div>
+                                <div class="data">
+                                    <div>{EARRING:name}</div>
+                                    {EARRING:psycheData}
+                                </div>
+                            </div>
+                            <div class="item necklace grade{NECKLACE:grade}">
+                                <div class="icon" style="background-image: url({NECKLACE:image});" alt="{NECKLACE:name}"></div>
+                                <div class="data">
+                                    <div>{NECKLACE:name}</div>
+                                    {NECKLACE:psycheData}
+                                </div>
+                            </div>
+                            <div class="item bracelet grade{BRACELET:grade}">
+                                <div class="icon" style="background-image: url({BRACELET:image});" alt="{BRACELET:name}"></div>
+                                <div class="data">
+                                    <div>{BRACELET:name}</div>
+                                    {BRACELET:psycheData}
+                                </div>
+                            </div>
+                            <div class="item belt grade{BELT:grade}">
+                                <div class="icon" style="background-image: url({BELT:image});" alt="{BELT:name}"></div>
+                                <div class="data">
+                                    <div>{BELT:name}</div>
+                                    {BELT:psycheData}
+                                </div>
+                            </div>
+                            <div class="item gloves grade{GLOVES:grade}">
+                                <div class="icon" style="background-image: url({GLOVES:image});" alt="{GLOVES:name}"></div>
+                                <div class="data">
+                                    <div>{GLOVES:name}</div>
+                                    {GLOVES:psycheData}
+                                </div>
+                            </div>
+                            <div class="item soul_badge grade{SOUL_BADGE:grade}">
+                                <div class="icon" style="background-image: url({SOUL_BADGE:image});" alt="{SOUL_BADGE:name}"></div>
+                                <div class="data">
+                                    <div>{SOUL_BADGE:name}</div>
+                                    {SOUL_BADGE:psycheData}
+                                </div>
+                            </div>
+                            <div class="item mystic_badge grade{MYSTIC_BADGE:grade}">
+                                <div class="icon" style="background-image: url({MYSTIC_BADGE:image});" alt="{MYSTIC_BADGE:name}"></div>
+                                <div class="data">
+                                    <div>{MYSTIC_BADGE:name}</div>
+                                    {MYSTIC_BADGE:psycheData}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="item soul grade{SOUL:grade}">
+                                <div class="icon" style="background-image: url({SOUL:image});" alt="{SOUL:name}"></div>
+                                <div class="data">
+                                    <div>{SOUL:name}</div>
+                                    {SOUL:psycheData}
+                                </div>
+                            </div>
+                            <div class="item heart grade{HEART:grade}">
+                                <div class="icon" style="background-image: url({HEART:image});" alt="{HEART:name}"></div>
+                                <div class="data">
+                                    <div>{HEART:name}</div>
+                                    {HEART:psycheData}
+                                </div>
+                            </div>
+                            <div class="item pet grade{PET:grade}">
+                                <div class="icon" style="background-image: url({PET:image});" alt="{PET:name}"></div>
+                                <div class="data">
+                                    <div>{PET:name}</div>
+                                    {PET:psycheData}
+                                    <!-- BEGIN PET_GEMS -->
+                                    <img class="gem" src="{EQDKP_ROOT_PATH}games/bs/profiles/pet_gems/{PET_GEMS.image}" alt="{PET_GEMS.name}" title="{PET_GEMS.name}" />
+                                    <!-- END PET_GEMS -->
+                                </div>
+                            </div>
+                            <div class="item talisman grade{TALISMAN:grade}">
+                                <div class="icon" style="background-image: url({TALISMAN:image});" alt="{TALISMAN:name}"></div>
+                                <div class="data">
+                                    <div>{TALISMAN:name}</div>
+                                    {TALISMAN:psycheData}
+                                </div>
+                            </div>
+                            <div class="item fashion_main grade{FASHION_MAIN:grade}">
+                                <div class="icon" style="background-image: url({FASHION_MAIN:image});" alt="{FASHION_MAIN:name}"></div>
+                                <div class="data">
+                                    <div>{FASHION_MAIN:name}</div>
+                                </div>
+                            </div>
+                            <div class="item fashion_back grade{FASHION_BACK:grade}">
+                                <div class="icon" style="background-image: url({FASHION_BACK:image});" alt="{FASHION_BACK:name}"></div>
+                                <div class="data">
+                                    <div>{FASHION_BACK:name}</div>
+                                </div>
+                            </div>
+                            <div class="item fashion_head grade{FASHION_HEAD:grade}">
+                                <div class="icon" style="background-image: url({FASHION_HEAD:image});" alt="{FASHION_HEAD:name}"></div>
+                                <div class="data">
+                                    <div>{FASHION_HEAD:name}</div>
+                                </div>
+                            </div>
+                            <div class="item fashion_face grade{FASHION_FACE:grade}">
+                                <div class="icon" style="background-image: url({FASHION_FACE:image});" alt="{FASHION_FACE:name}"></div>
+                                <div class="data">
+                                    <div>{FASHION_FACE:name}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bns_tabs-stats" style="height: min-content; overflow: auto;">
+                    <div class="stats">
+                        <div class="offense">
+                            <div class="heading">
+                                <div class="sk offense-points">{CHAR_STATS:sk-offense}P</div>
+                                <div class="main-stat"><span>{GL_attack_power}</span><br />{CHAR_STATS:ap}</div>
+                                <div class="sk threat-points">{CHAR_STATS:sk-threat}P</div>
+                                <div class="sk focus-points">{CHAR_STATS:sk-focus}P</div>
+                            </div>
+                            <div class="stat attack-power">
+                                <div class="name">{GL_attack_power}</div>
+                                <div class="value">{CHAR_STATS:ap}</div>
+                            </div>
+                            <div class="stat pvp-ap">
+                                <div class="name">{GL_pvp_ap}</div>
+                                <div class="value">{CHAR_STATS:pvp-ap}</div>
+                            </div>
+                            <div class="stat boss-ap">
+                                <div class="name">{GL_boss_ap}</div>
+                                <div class="value">{CHAR_STATS:boss-ap}</div>
+                            </div>
+                            <div class="stat piercing">
+                                <div class="name">{GL_piercing}</div>
+                                <div class="value">{CHAR_STATS:piercing}</div>
+                            </div>
+                            <div class="stat accuracy">
+                                <div class="name">{GL_accuracy}</div>
+                                <div class="value">{CHAR_STATS:accuracy} ({CHAR_STATS:accuracy-rate}%)</div>
+                            </div>
+                            <div class="stat crit">
+                                <div class="name">{GL_crit}</div>
+                                <div class="value">{CHAR_STATS:crit} ({CHAR_STATS:crit-rate}%)</div>
+                            </div>
+                            <div class="stat crit-dmg">
+                                <div class="name">{GL_crit_dmg}</div>
+                                <div class="value">{CHAR_STATS:crit-dmg} ({CHAR_STATS:crit-dmg-rate}%)</div>
+                            </div>
+                            <div class="stat additional-dmg">
+                                <div class="name">{GL_additional_dmg}</div>
+                                <div class="value">{CHAR_STATS:additional-dmg}</div>
+                            </div>
+                            <div class="stat threat">
+                                <div class="name">{GL_threat}</div>
+                                <div class="value">{CHAR_STATS:threat}</div>
+                            </div>
+                            <div class="stat debuff-dmg">
+                                <div class="name">{GL_debuff_dmg}</div>
+                                <div class="value">{CHAR_STATS:debuff-dmg}</div>
+                            </div>
+                            <div class="stat mystic">
+                                <div class="name">{GL_mystic}</div>
+                                <div class="value">{CHAR_STATS:mystic} ({CHAR_STATS:mystic-rate}%)</div>
+                            </div>
+                        </div>
+                        <div class="defense">
+                            <div class="heading">
+                                <div class="sk defense-points">{CHAR_STATS:sk-defense}P</div>
+                                <div class="main-stat"><span>{GL_hp}</span><br />{CHAR_STATS:hp}</div>
+                                <div class="sk health-reg-points">{CHAR_STATS:sk-health-reg}P</div>
+                                <div class="sk movement-points">{CHAR_STATS:sk-movement}P</div>
+                                <div class="sk debuff-points">{CHAR_STATS:sk-debuff}P</div>
+                            </div>
+                            <div class="stat hp">
+                                <div class="name">{GL_hp}</div>
+                                <div class="value">{CHAR_STATS:hp}</div>
+                            </div>
+                            <div class="stat defense">
+                                <div class="name">{GL_defense}</div>
+                                <div class="value">{CHAR_STATS:defense}</div>
+                            </div>
+                            <div class="stat pvp-defense">
+                                <div class="name">{GL_pvp_defense}</div>
+                                <div class="value">{CHAR_STATS:pvp-defense}</div>
+                            </div>
+                            <div class="stat boss-defense">
+                                <div class="name">{GL_boss_defense}</div>
+                                <div class="value">{CHAR_STATS:boss-defense}</div>
+                            </div>
+                            <div class="stat evasion">
+                                <div class="name">{GL_evasion}</div>
+                                <div class="value">{CHAR_STATS:evasion}</div>
+                            </div>
+                            <div class="stat block">
+                                <div class="name">{GL_block}</div>
+                                <div class="value">{CHAR_STATS:block}</div>
+                            </div>
+                            <div class="stat crit-defense">
+                                <div class="name">{GL_crit_defense}</div>
+                                <div class="value">{CHAR_STATS:crit-defense}</div>
+                            </div>
+                            <div class="stat health-reg">
+                                <div class="name">{GL_health_reg}</div>
+                                <div class="value">{CHAR_STATS:health-reg-in} / {CHAR_STATS:health-reg-out}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- IF HAS_TALENTS -->
+                <div id="bns_tabs-talents" style="height: min-content; overflow: auto;">
+                    <!-- BEGIN talents -->
+                    <div class="tier">
+                        <!-- BEGIN traits -->
+                        <div class="trait{talents.traits.class}">
+                            <img src="{talents.traits.image}" alt="{talents.traits.name}" title="{talents.traits.name}" />
+                            <span>{talents.traits.name}</span>
+                        </div>
+                        <!-- END traits -->
+                    </div>
+                    <!-- END talents -->
+                </div>
+                <!-- ENDIF -->
+                <div id="bns_tabs-skills" style="height: min-content; overflow: auto;">
+                    <div class="skills">
+                        <!-- BEGIN character_skills -->
+                        <div class="skill{character_skills.class}">
+                            <div class="skill_icon level{character_skills.skill_level} level_max{character_skills.skill_level_max}">
+                                <img src="{character_skills.image}" alt="{character_skills.name}" title="{character_skills.name}" />
+                                <span class="skill_level">{character_skills.skill_level}/{character_skills.skill_level_max}</span>
+                            </div>
+                            <div>
+                                <h3>{character_skills.name}</h3>
+                                <p><img class="group_icon" src="{character_skills.group_icon}" alt="{character_skills.group_name}" title="{character_skills.group_name}" /> {character_skills.group_name}</p>
+                            </div>
+                        </div>
+                        <!-- END character_skills -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ELSE -->
+    <div class="infobox infobox-large infobox-blue clearfix">
+        <i class="fa fa-info-circle fa-4x pull-left"></i> {GL_no_data}
+    </div>
+    <br />
+    <div class="profile_header">
+        {IMG_CLASSICON}
+        <div class="charname">{CHARDATA_NAME}</div>
+        <div class="charlevel">{L_level} {DATA_LEVEL}, {DATA_CLASSNAME}</div>
+        <div class="charguild">{DATA_GUILDTAG}</div>
+    </div>
+
+    <table class="table fullwidth borderless character-info">
+        <tr>
+            <!-- IF S_CHARDATA_PICTURE -->
+            <td style="min-width:1px">
+                <div class="profile_picture">
+                    {CHARDATA_PICTURE}
+                </div>
+            </td>
+            <!-- ENDIF -->
+
+            <!-- IF S_PFIELDS -->
+            <td>
+                <div class="profile_information" id="profile_field_data">
+                    <ul>
+                        <!-- BEGIN cat_data -->
+                        <li><a href="#{cat_data.ID}"><span>{cat_data.NAME}</span></a></li>
+                        <!-- END cat_data -->
+                    </ul>
+
+                    <!-- BEGIN cat_data -->
+                    <div id="{cat_data.ID}">
+                        <fieldset class="settings mediumsettings">
+                            <!-- BEGIN pfield_data -->
+                            <dl>
+                                <dt><label>{cat_data.pfield_data.NAME}</label></dt>
+                                <dd>{cat_data.pfield_data.VALUE}</dd>
+                            </dl>
+                            <!-- END pfield_data -->
+                        </fieldset>
+                    </div>
+                    <!-- END cat_data -->
+
+                </div>
+            </td>
+            <!-- ENDIF -->
+        </tr>
+    </table>
+    <!-- ENDIF -->
+</div>
+
+<!-- IF MEMBER_POINTS -->
+<div class="character-points">
+    <div class="tableHeader">
+        <h2>{L_DKP_NAME} {HPTT_ADMIN_LINK}</h2>
+    </div>
+    <input type="checkbox" onchange="window.location='{SID}&with_twinks='+ ((this.checked) ? 0 : 1)" name="with_twinks" value="1" <!-- IF not S_WITH_TWINK_DKP -->checked="checked"<!-- ENDIF --> /> {L_points_for_this_char}
+    <br /><br />
+    <table class="table fullwidth borderless colorswitch  scrollable-x">
+        {MEMBER_POINTS}
+    </table>
+    <br />
+</div>
+<!-- ENDIF -->
+
+<div id="profile_information">
+    <ul>
+        <li><a href="#fragment-2"><span>{L_tab_raids}</span></a></li>
+        <li><a href="#fragment-3"><span>{L_tab_items}</span></a></li>
+        <!-- IF not S_POINTS_DISABLED -->
+        <li><a href="#fragment-4"><span>{L_tab_adjustments}</span></a></li>
+        <!-- ENDIF -->
+        <li><a href="#fragment-5"><span>{L_tab_attendance}</span></a></li>
+        <li><a href="#fragment-6"><span class="adminicon">{L_tab_notes}</span></a></li>
+    </ul>
+
+    <!-- RAIDS TABLE -->
+    <div id="fragment-2">
+        <div class="tableHeader">
+            <h2>{L_raid_attendance_history} {HPTT_ADMIN_LINK}</h2>
+        </div>
+        <div class="center pagination_wrapper">
+            {RAID_PAGINATION}
+        </div>
+        <table class="table fullwidth hptt colorswitch scrollable-x">
+            {RAID_OUT}
+        </table>
+        <div class="center pagination_wrapper">
+            {RAID_PAGINATION}
+        </div>
+    </div>
+
+    <!-- ITEMS TABLE -->
+    <div id="fragment-3">
+        <div class="tableHeader">
+            <h2>{L_item_purchase_history} {HPTT_ADMIN_LINK}</h2>
+        </div>
+        <div class="center pagination_wrapper">
+            {ITEM_PAGINATION}
+        </div>
+        <table class="table fullwidth hptt colorswitch scrollable-x">
+            {ITEM_OUT}
+        </table>
+        <div class="center pagination_wrapper">
+            {ITEM_PAGINATION}
+        </div>
+    </div>
+
+    <!-- IF not S_POINTS_DISABLED -->
+    <!-- ADJUSTMENTS TABLE-->
+    <div id="fragment-4">
+        <div class="tableHeader">
+            <h2>{L_individual_adjustment_history} {HPTT_ADMIN_LINK}</h2>
+        </div>
+        <div class="center pagination_wrapper">
+            {ADJUSTMENT_PAGINATION}
+        </div>
+        <table class="table fullwidth hptt colorswitch scrollable-x">
+            {ADJUSTMENT_OUT}
+        </table>
+        <div class="center pagination_wrapper">
+            {ADJUSTMENT_PAGINATION}
+        </div>
+    </div>
+    <!-- ENDIF -->
+
+    <!-- ATTENDANCE -->
+    <div id="fragment-5">
+        <table class="table fullwidth hptt colorswitch scrollable-x">
+            {EVENT_ATT_OUT}
+        </table>
+    </div>
+
+    <!-- NOTES TABLE -->
+    <div id="fragment-6">
+        {NOTES}
+    </div>
+</div>
+<br />
