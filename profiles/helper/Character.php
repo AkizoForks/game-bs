@@ -347,7 +347,7 @@ class Character
                     $petGemData = json_decode(file_get_contents(dirname(__FILE__) . '/pet_gem_data_' . $this->lang . '.json'), true);
                     $petGems = [];
 
-                    for ($i = 8; $i <= 13; $i++) {
+                    for ($i = 8; $i <= 15; $i++) {
                         if (isset($tmp[$i]) && $tmp[$i] != '0' && isset($petGemData[$tmp[$i]])) {
                             $petGems[] = $petGemData[$tmp[$i]];
                         }

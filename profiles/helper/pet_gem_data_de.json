@@ -244,6 +244,108 @@
   "83462": {
     "name": "Vergoldeter Fünfeckiger Jaspis des Gefährten",
     "image": "EquipGem_9Phase_Corundum_Orange.png"
+  },
+
+  "83576": {
+    "name": "Siebeneckiger Karneol des Gefährten",
+    "image": "EquipGem_5Phase_Corundum_Red.png"
+  },
+  "83577": {
+    "name": "Achteckiger Karneol des Gefährten",
+    "image": "EquipGem_6Phase_Corundum_Red.png"
+  },
+  "83578": {
+    "name": "Vergoldeter Dreieckiger Karneol des Gefährten",
+    "image": "EquipGem_7Phase_Corundum_Red.png"
+  },
+  "83579": {
+    "name": "Vergoldeter Quadratischer Karneol des Gefährten",
+    "image": "EquipGem_8Phase_Corundum_Red.png"
+  },
+  "83580": {
+    "name": "Vergoldeter Fünfeckiger Karneol des Gefährten",
+    "image": "EquipGem_9Phase_Corundum_Red.png"
+  },
+
+  "83581": {
+    "name": "Siebeneckiger Kunzit des Gefährten",
+    "image": "EquipGem_5Phase_Corundum_Purple.png"
+  },
+  "83582": {
+    "name": "Achteckiger Kunzit des Gefährten",
+    "image": "EquipGem_6Phase_Corundum_Purple.png"
+  },
+  "83583": {
+    "name": "Vergoldeter Dreieckiger Kunzit des Gefährten",
+    "image": "EquipGem_7Phase_Corundum_Purple.png"
+  },
+  "83584": {
+    "name": "Vergoldeter Quadratischer Kunzit des Gefährten",
+    "image": "EquipGem_8Phase_Corundum_Purple.png"
+  },
+  "83585": {
+    "name": "Vergoldeter Fünfeckiger Kunzit des Gefährten",
+    "image": "EquipGem_9Phase_Corundum_Purple.png"
+  },
+
+  "83586": {
+    "name": "Siebeneckiger Malachit des Gefährten",
+    "image": "EquipGem_5Phase_Corundum_Green.png"
+  },
+  "83587": {
+    "name": "Achteckiger Malachit des Gefährten",
+    "image": "EquipGem_6Phase_Corundum_Green.png"
+  },
+  "83588": {
+    "name": "Vergoldeter Dreieckiger Malachit des Gefährten",
+    "image": "EquipGem_7Phase_Corundum_Green.png"
+  },
+  "83589": {
+    "name": "Vergoldeter Quadratischer Malachit des Gefährten",
+    "image": "EquipGem_8Phase_Corundum_Green.png"
+  },
+  "83590": {
+    "name": "Vergoldeter Fünfeckiger Malachit des Gefährten",
+    "image": "EquipGem_9Phase_Corundum_Green.png"
+  },
+
+  "83599": {
+    "name": "Siebeneckiger Karneol",
+    "image": "EquipGem_5Phase_Corundum_Red.png"
+  },
+  "83600": {
+    "name": "Achteckiger Karneol",
+    "image": "EquipGem_6Phase_Corundum_Red.png"
+  },
+  "83601": {
+    "name": "Vergoldeter Dreieckiger Karneol",
+    "image": "EquipGem_7Phase_Corundum_Red.png"
+  },
+
+  "83602": {
+    "name": "Siebeneckiger Kunzit",
+    "image": "EquipGem_5Phase_Corundum_Purple.png"
+  },
+  "83603": {
+    "name": "Achteckiger Kunzit",
+    "image": "EquipGem_6Phase_Corundum_Purple.png"
+  },
+  "83604": {
+    "name": "Vergoldeter Dreieckiger Kunzit",
+    "image": "EquipGem_7Phase_Corundum_Purple.png"
+  },
+
+  "83605": {
+    "name": "Siebeneckiger Malachit",
+    "image": "EquipGem_5Phase_Corundum_Green.png"
+  },
+  "83606": {
+    "name": "Achteckiger Malachit",
+    "image": "EquipGem_6Phase_Corundum_Green.png"
+  },
+  "83607": {
+    "name": "Vergoldeter Dreieckiger Malachit",
+    "image": "EquipGem_7Phase_Corundum_Green.png"
   }
 
 }

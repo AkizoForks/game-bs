@@ -19,7 +19,6 @@
     "name": "Gilded Pentagonal Pet Diamond",
     "image": "EquipGem_9Phase_Corundum_White.png"
   },
-
   "82843": {
     "name": "Heptagonal Pet Obsidian",
     "image": "EquipGem_5Phase_Corundum_Black.png"
@@ -40,7 +39,6 @@
     "name": "Gilded Pentagonal Pet Obsidian",
     "image": "EquipGem_9Phase_Corundum_Black.png"
   },
-
   "82846": {
     "name": "Heptagonal Dueler Pet Obsidian",
     "image": "EquipGem_5Phase_Corundum_Black.png"
@@ -61,8 +59,6 @@
     "name": "Gilded Pentagonal Dueler Pet Obsidian",
     "image": "EquipGem_9Phase_Corundum_Black.png"
   },
-
-
   "82849": {
     "name": "Heptagonal Pet Garnet",
     "image": "EquipGem_5Phase_Corundum_Pink.png"
@@ -83,7 +79,6 @@
     "name": "Gilded Pentagonal Pet Garnet",
     "image": "EquipGem_9Phase_Corundum_Pink.png"
   },
-
   "82852": {
     "name": "Heptagonal Dueler Pet Garnet",
     "image": "EquipGem_5Phase_Corundum_Pink.png"
@@ -104,8 +99,6 @@
     "name": "Gilded Dueler Pentagonal Pet Garnet",
     "image": "EquipGem_9Phase_Corundum_Pink.png"
   },
-
-
   "83225": {
     "name": "Heptagonal Pet Calcite",
     "image": "EquipGem_5Phase_Corundum_Yellow.png"
@@ -126,8 +119,6 @@
     "name": "Gilded Pentagonal Pet Calcite",
     "image": "EquipGem_9Phase_Corundum_Yellow.png"
   },
-
-
   "83229": {
     "name": "Heptagonal Pet Jade",
     "image": "EquipGem_5Phase_Corundum_BlueGreen.png"
@@ -148,8 +139,6 @@
     "name": "Gilded  Pentagonal Pet Jade",
     "image": "EquipGem_9Phase_Corundum_BlueGreen.png"
   },
-
-
   "83233": {
     "name": "Heptagonal Pet Zircon",
     "image": "EquipGem_5Phase_Corundum_Blue.png"
@@ -170,8 +159,6 @@
     "name": "Gilded Pentagonal Pet Zircon",
     "image": "EquipGem_9Phase_Corundum_Blue.png"
   },
-
-
   "83339": {
     "name": "Heptagonal Pet Calcite",
     "image": "EquipGem_5Phase_Corundum_Yellow.png"
@@ -180,7 +167,6 @@
     "name": "Octagonal Pet Calcite",
     "image": "EquipGem_6Phase_Corundum_Yellow.png"
   },
-
   "83341": {
     "name": "Heptagonal Pet Jade",
     "image": "EquipGem_5Phase_Corundum_BlueGreen.png"
@@ -189,7 +175,6 @@
     "name": "Octagonal Pet Jade",
     "image": "EquipGem_6Phase_Corundum_BlueGreen.png"
   },
-
   "83343": {
     "name": "Heptagonal Pet Zircon",
     "image": "EquipGem_5Phase_Corundum_Blue.png"
@@ -198,12 +183,10 @@
     "name": "Octagonal Pet Zircon",
     "image": "EquipGem_6Phase_Corundum_Blue.png"
   },
-
   "4400433": {
     "name": "Haunted Gilded Triangular Pet Jasper",
     "image": "EquipGem_7Phase_Corundum_Orange.png"
   },
-
   "83453": {
     "name": "Heptagonal Pet Tanzanite",
     "image": "EquipGem_5Phase_Corundum_Navy.png"
@@ -224,7 +207,6 @@
     "name": "Gilded Pentagonal Pet Tanzanite",
     "image": "EquipGem_9Phase_Corundum_Navy.png"
   },
-
   "83458": {
     "name": "Heptagonal Pet Jasper",
     "image": "EquipGem_5Phase_Corundum_Orange.png"
@@ -244,6 +226,107 @@
   "83462": {
     "name": "Gilded Pentagonal Pet Jasper",
     "image": "EquipGem_9Phase_Corundum_Orange.png"
-  }
+  },
 
+  "83576": {
+    "name": "Heptagonal Carnelian Pet Gem",
+    "image": "EquipGem_5Phase_Corundum_Red.png"
+  },
+  "83577": {
+    "name": "Octagonal Carnelian Pet Gem",
+    "image": "EquipGem_6Phase_Corundum_Red.png"
+  },
+  "83578": {
+    "name": "Gilded Triangular Carnelian Pet Gem",
+    "image": "EquipGem_7Phase_Corundum_Red.png"
+  },
+  "83579": {
+    "name": "Gilded Square Carnelian Pet Gem",
+    "image": "EquipGem_8Phase_Corundum_Red.png"
+  },
+  "83580": {
+    "name": "Gilded Pentagonal Carnelian Pet Gem",
+    "image": "EquipGem_9Phase_Corundum_Red.png"
+  },
+
+  "83581": {
+    "name": "Heptagonal Kunzite Pet Gem",
+    "image": "EquipGem_5Phase_Corundum_Purple.png"
+  },
+  "83582": {
+    "name": "Octagonal Kunzite Pet Gem",
+    "image": "EquipGem_6Phase_Corundum_Purple.png"
+  },
+  "83583": {
+    "name": "Gilded Triangular Kunzite Pet Gem",
+    "image": "EquipGem_7Phase_Corundum_Purple.png"
+  },
+  "83584": {
+    "name": "Gilded Square Kunzite Pet Gem",
+    "image": "EquipGem_8Phase_Corundum_Purple.png"
+  },
+  "83585": {
+    "name": "Gilded Pentagonal Kunzite Pet Gem",
+    "image": "EquipGem_9Phase_Corundum_Purple.png"
+  },
+
+  "83586": {
+    "name": "Heptagonal Malachite Pet Gem",
+    "image": "EquipGem_5Phase_Corundum_Green.png"
+  },
+  "83587": {
+    "name": "Octagonal Malachite Pet Gem",
+    "image": "EquipGem_6Phase_Corundum_Green.png"
+  },
+  "83588": {
+    "name": "Gilded Triangular Malachite Pet Gem",
+    "image": "EquipGem_7Phase_Corundum_Green.png"
+  },
+  "83589": {
+    "name": "Gilded Square Malachite Pet Gem",
+    "image": "EquipGem_8Phase_Corundum_Green.png"
+  },
+  "83590": {
+    "name": "Gilded Pentagonal Malachite Pet Gem",
+    "image": "EquipGem_9Phase_Corundum_Green.png"
+  },
+
+  "83599": {
+    "name": "Heptagonal Carnelian Pet Gem",
+    "image": "EquipGem_5Phase_Corundum_Red.png"
+  },
+  "83600": {
+    "name": "Octagonal Carnelian Pet Gem",
+    "image": "EquipGem_6Phase_Corundum_Red.png"
+  },
+  "83601": {
+    "name": "Gilded Triangular Carnelian Pet Gem",
+    "image": "EquipGem_7Phase_Corundum_Red.png"
+  },
+
+  "83602": {
+    "name": "Heptagonal Kunzite Pet Gem",
+    "image": "EquipGem_5Phase_Corundum_Purple.png"
+  },
+  "83603": {
+    "name": "Octagonal Kunzite Pet Gem",
+    "image": "EquipGem_6Phase_Corundum_Purple.png"
+  },
+  "83604": {
+    "name": "Gilded Triangular Kunzite Pet Gem",
+    "image": "EquipGem_7Phase_Corundum_Purple.png"
+  },
+
+  "83605": {
+    "name": "Heptagonal Malachite Pet Gem",
+    "image": "EquipGem_5Phase_Corundum_Green.png"
+  },
+  "83606": {
+    "name": "Octagonal Malachite Pet Gem",
+    "image": "EquipGem_6Phase_Corundum_Green.png"
+  },
+  "83607": {
+    "name": "Gilded Triangular Malachite Pet Gem",
+    "image": "EquipGem_7Phase_Corundum_Green.png"
+  }
 }
